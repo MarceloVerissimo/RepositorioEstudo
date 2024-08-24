@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Viagem</title>
+</head>
+<body>
+    <h1>Formulário de Reserva de Viagem</h1>
+
+    <form method="get" action="">
+        <fieldset>
+        <label>Nome:</label><br>
+        <input type="text" required name="nome"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" required name="email"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <label>Serviços Desejados:</label>
+            <label>
+                <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+            </label>
+            <label>
+                <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hospedagem
+            </label>
+            <label>
+                <br><input type="checkbox" name="veiculos" value="Veículo">Aluguel de Veículos<br><br>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de Crédito
+            </label>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Pix">Pix
+            </label>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Boleto">Boleto Bancário<br><br>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <select name="prazoPagamento">
+                <option value="aVista" selected>Á Vista</option>
+                <option value="5x">5x S/ Juros</option>
+                <option value="10x">10x C/ Juros</option>
+            </select>
+        </fieldset>
+
+        <label>Comentários</label><br>
+        <textarea rows="5"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+        
+    </form>
+    
+</body>
+</html>

@@ -9,7 +9,11 @@
 <body>
     <header>
         <nav>
-            <ul></ul>
+            <ul>
+                <li>Pacotes</li>
+                <li>Taxas</li>
+                <li>Contatos</li>
+            </ul>
         </nav>
         <h1>Venha realizar a viagem dos seus Sonhos</h1>
     </header>
@@ -17,8 +21,7 @@
         <h2>Conheça nossos pacotes</h2>
         <p> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor fermentum libero et volutpat. Curabitur
-        ac
-        eros imperdiet, rhoncus ligula ac, dictum orci. Curabitur efficitur enim sit amet auctor mollis. Cras convallis
+        aceros imperdiet, rhoncus ligula ac, dictum orci. Curabitur efficitur enim sit amet auctor mollis. Cras convallis
         sem et orci sagittis, vel consectetur lorem accumsan. Proin nunc libero, vestibulum eu sodales at, ultricies sed
         ipsum. Vestibulum tortor eros, interdum egestas finibus sed, vehicula a ex. Nulla facilisi. Curabitur eget
         molestie enim. Quisque auctor nulla eget orci efficitur, eget porta dui hendrerit. Ut mi erat, ornare luctus
@@ -31,7 +34,7 @@
         vulputate est semper vel.
             <br><br>
             <a href="https://www.w3.org/">Site Oficial da W3C</a>
-            <hr>
+            <hr> 
         </p>
         <figure>
             <img src="Img/Nossos pacotes/gramado.jpg" alt="Imagem de Gramado">
@@ -54,10 +57,119 @@
         <source src="Video/Amazonia.mp4" type="Video/mp4">
         Seu navegador não suporta o formado do Video <a href="Video/Amazonia.mp4">Clique aqui para baixar</a>
     </video>
+    <br><br>
+    <section>
+        <h2>Taxas e Serviços</h2>
+        <p>Veja nossas taxas para serviços:</p>
+        <table border>
+            <caption>Descrição dos serviços e respectivos valores</caption>
+            <thead>
+            <tr>
+                <th>
+                    Serviço
+                </th>
+                <th>
+                    Valor
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    Reserva de Hotel
+                </td>
+                <td>
+                    R$250,00
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Compra de passagens
+                </td>
+                <td>
+                    R$100,00
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Aluguel de Carros
+                </td>
+                <td>
+                    R$50,00
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Orçamento</h2>
+        <form method="get" action="">
+
+            <fieldset>
+                <legend>Dados da Viagem</legend>
+            <label>Nome:</label><br>
+            <input type="text" required name="nome"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" required name="email"><br><br>
+
+            <label>Data de Ida:</label><br>
+            <input type="date" required name="dataIda"><br><br>
+
+            <label>Data de Volta:</label><br>
+            <input type="date" required name="dataVolta"><br><br>
+
+            <label>Quantidade de Pessoas:</label><br>
+            <input type="number" required name="qtdPessoas"><br><br>
+            </fieldset>
+            
+
+            <fieldset>
+            <legend>Quais serviços deseja contratar?</legend>
+            <label>
+                <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+            </label>
+            <label>
+                <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+            </label>
+            <label>
+                <br><input type="checkbox" name="veiculos" value="Veículo">Reserva de veículos<br><br>
+            </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Cartão de Crédito">Cartão de Crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Boleto">Boleto Bancário
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Pix">Pix
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista" selected>Á Vista</option>
+                    <option value="5x">5x sem juros</option>
+                    <option value="10x">10x com juros</option>
+                </select>
+            </fieldset>
+            
+            
+            <label>Comentário:</label><br>
+            <textarea rows="5"></textarea><br><br>
+
+            <button>Salvar</button>
+
+        </form>
+    </section>
     <footer>
-        <p>Marcelo Verissimo</p>
-        <p>Exercicio da aula HTML</p>
-        <p>marccelo</p>
+        <p>Desenvolvido por Marcelo Verissimo</p>
+       
     </footer>
 </body>
 
